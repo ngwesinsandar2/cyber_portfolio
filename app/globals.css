@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --primary-color: #B01A35;
+  --primary-color: #D21312;
+  --primary-color: #38d9a9;
+  --primary-color: #EFBE3D;
   --grey-color: #161D31;
+  --grey-color: #212529;
 }
 
 * {
@@ -21,9 +26,19 @@ body {
 }
 
 body {
+  font-family: 'Rajdhani', sans-serif;
   color: #fff;
 }
 
 .writing_mode_rl {
   writing-mode: vertical-rl;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 7px;
 }

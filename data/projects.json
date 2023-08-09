@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "project_name": "My Music Project",
+    "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
+    "img": "/assets/images/projects/myMusicUI.png",
+    "demo_link": "",
+    "source_code_link": ""
+  },
+  {
+    "id": 2,
+    "project_name": "Digital Hunter",
+    "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
+    "img": "/assets/images/projects/digitalHunter.png",
+    "demo_link": "",
+    "source_code_link": ""
+  },
+  {
+    "id": 3,
+    "project_name": "Portfolio",
+    "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
+    "img": "/assets/images/projects/portfolioLight.png",
+    "img2": "/assets/images/projects/portfolioDark.png",
+    "demo_link": "https://ngwesinsandar2.github.io/ngwe_sin_sandar/",
+    "source_code_link": ""
+  },
+  {
+    "id": 4,
+    "project_name": "Casey Gardner(Atypical Serie)",
+    "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
+    "img": "/assets/images/projects/cgLight.png",
+    "img2": "/assets/images/projects/cgDark.png",
+    "demo_link": "",
+    "source_code_link": ""
+  },
+  {
+    "id": 5,
+    "project_name": "Favourite Simps",
+    "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
+    "img": "/assets/images/projects/favSimps.png",
+    "demo_link": ""
+  },
+  {
+    "id": 6,
+    "project_name": "Kim Da Mi",
+    "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
+    "img": "/assets/images/projects/kimDaMi.png",
+    "demo_link": "",
+    "source_code_link": ""
+  }
+]

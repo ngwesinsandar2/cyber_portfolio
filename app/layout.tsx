@@ -1,3 +1,6 @@
+import Footer from './components/Footer'
+import Navbar from './components/Navbar/Navbar'
+import PageWrapper from './components/PageWrapper'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -15,10 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="container mx-auto">
+      <body>
+        <PageWrapper>
           {children}
-        </div>
+        </PageWrapper>
       </body>
     </html>
   )

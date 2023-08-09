@@ -8,26 +8,26 @@ const CyberCircle = () => {
       <div className="relative">
         <Image
           src={cyber_circle}
-          alt="Kim Da-mi First Image"
+          alt="Cyber Circle"
           width={350}
           height={350}
-          className='animate-[spin_30s_linear_infinite]'
+          className="animate-[spin_30s_linear_infinite]"
         />
 
         <div className="w-[325px] h-[325px] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
           <Image
             src={cyber_circle}
-            alt="Kim Da-mi First Image"
+            alt="Cyber Circle"
             width={325}
             height={325}
-            className='animate-[spin_30s_linear_infinite_reverse]'
+            className="animate-[spin_30s_linear_infinite_reverse]"
           />
         </div>
 
         <div className="w-[300px] h-[300px] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
           <Image
             src={kurumi_lr}
-            alt="Kim Da-mi First Image"
+            alt="Kurumi from Lycoris Recoil Anime"
             width={300}
             height={300}
             className='rounded-full'
