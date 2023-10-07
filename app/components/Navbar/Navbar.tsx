@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className={`${showMenu ? '-rotate-45 -translate-y-[0.55rem] w-8' : 'rotate-0 translate-y-0 w-4'}  h-1 bg-white rounded-lg self-end transition-all duration-300`}></div>
         </button>
 
-        <nav>
+        <nav className="bg-black/20 backdrop-blur-lg px-4 rounded-sm">
           <ul className="hidden md:flex flex-col sm:flex-row gap-6">
             {
               links.map(link => {
