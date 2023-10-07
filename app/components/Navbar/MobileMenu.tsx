@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
@@ -11,7 +11,13 @@ interface LinkInterface {
   link_url: String | Url | UrlObject,
 }
 
-const MobileMenu = ({ links, showMenu }: { links: LinkInterface[], showMenu: Boolean }) => {
+const MobileMenu = ({
+  links,
+  showMenu,
+}: {
+  links: LinkInterface[];
+  showMenu: Boolean;
+}) => {
   const pathname = usePathname();
 
   return (
@@ -39,6 +45,6 @@ const MobileMenu = ({ links, showMenu }: { links: LinkInterface[], showMenu: Boo
       </ul>
     </nav>
   );
-}
+};
 
 export default MobileMenu;
