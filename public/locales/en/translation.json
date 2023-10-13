@@ -1,0 +1,42 @@
+{
+    "common": {
+        "navbar": {
+            "home": "Home",
+            "about": "About",
+            "projects": "Projects",
+            "contact": "Contact"
+        },
+        "buttons": {
+            "contact": "Contact me",
+            "downloadCV": "Download CV",
+            "sourceCode": "Source code",
+            "seeDemo": "See demo"
+        },
+        "footer": {
+            "footerText": "All right serves - 2023 by Ngwe Sin Sandar"
+        }
+    },
+    "home": {
+        "fullNameUnderscore": "ngwe_sin_sandar",
+        "fullName": "Ngwe Sin",
+        "occupationUnderscore": "Frontend_dev",
+        "whatsUp": "What&apos;s up everyone",
+        "welcomeText": "Welcome from my cyber theme portfolio!!",
+        "thanksText": "Thanks for visiting"
+    },
+    "about": {
+        "title": "about me",
+        "subTitle": "Myself, Tech_Stack",
+        "myself": {
+            "title": "Myself",
+            "description": "My name is <0>Ngwe Sin Sandar</0> and I&apos;m a front-end developer from Myanmar who is comfortable working with React and responsive web design to deliver exceptional customer experience. I&apos;m 18years old and I&apos;ve finished matriculation. I&apos;m available for freelance."
+        },
+        "techStack": {
+            "title": "Tech Stack"
+        }
+    },
+    "projects": {
+        "title": "projects",
+        "subTitle": "My_Proud_Children"
+    }
+}
