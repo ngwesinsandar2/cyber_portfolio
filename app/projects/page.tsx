@@ -1,3 +1,5 @@
+"use client";
+
 import Footer from "../components/Footer";
 import projects from "../../data/projects.json";
 import Image from "next/image";

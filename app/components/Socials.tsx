@@ -49,7 +49,7 @@ const Socials = () => {
             return (
               <li key={social.id}>
                 <a href={social.link_url} className="group" target='_blank'>
-                  <social.icon className="text-xl text-[var(--primary-color)]" />
+                  <social.icon className="text-xl text-[--primary-color]" />
                 </a>
               </li>
             )

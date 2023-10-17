@@ -2,36 +2,36 @@
   {
     "id": 1,
     "tech_name": "HTML",
-    "img": "/assets/images/html-5.png"
+    "img": "/assets/images/tech_stacks/html-5.png"
   },
   {
     "id": 2,
     "tech_name": "CSS",
-    "img": "/assets/images/css-3.png"
+    "img": "/assets/images/tech_stacks/css-3.png"
   },
   {
     "id": 3,
     "tech_name": "JavaScript",
-    "img": "/assets/images/js.png"
+    "img": "/assets/images/tech_stacks/js.png"
   },
   {
     "id": 4,
     "tech_name": "React",
-    "img": "/assets/images/atom.png"
+    "img": "/assets/images/tech_stacks/atom.png"
   },
   {
     "id": 5,
     "tech_name": "NextJS",
-    "img": "/assets/images/git.png"
+    "img": "/assets/images/tech_stacks/git.png"
   },
   {
     "id": 6,
     "tech_name": "Vue",
-    "img": "/assets/images/git.png"
+    "img": "/assets/images/tech_stacks/git.png"
   },
   {
     "id": 7,
     "tech_name": "Git",
-    "img": "/assets/images/git.png"
+    "img": "/assets/images/tech_stacks/git.png"
   }
 ]

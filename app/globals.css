@@ -34,6 +34,10 @@ body {
   writing-mode: vertical-rl;
 }
 
+.subTitle {
+  clip-path: polygon(0% 0%,90% 0%,100% 30%,101% 98%,70% 100%,10% 100%,0% 70%,0% 30%);
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }

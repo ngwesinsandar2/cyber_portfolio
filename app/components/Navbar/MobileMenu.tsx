@@ -7,8 +7,8 @@ import { Url, UrlObject } from "url";
 
 interface LinkInterface {
   id: Key,
-  title: String,
-  link_url: String | Url | UrlObject,
+  title: string,
+  link_url: string | Url,
 }
 
 const MobileMenu = ({

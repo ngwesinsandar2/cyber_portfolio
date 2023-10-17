@@ -20,23 +20,35 @@
         "fullNameUnderscore": "ngwe_sin_sandar",
         "fullName": "Ngwe Sin",
         "occupationUnderscore": "Frontend_dev",
-        "whatsUp": "What&apos;s up everyone",
+        "whatsUp": "What's up everyone",
         "welcomeText": "Welcome from my cyber theme portfolio!!",
         "thanksText": "Thanks for visiting"
     },
     "about": {
         "title": "about me",
-        "subTitle": "Myself, Tech_Stack",
+        "subTitle": "Myself, Tech_Stack, Experience",
         "myself": {
             "title": "Myself",
             "description": "My name is <0>Ngwe Sin Sandar</0> and I&apos;m a front-end developer from Myanmar who is comfortable working with React and responsive web design to deliver exceptional customer experience. I&apos;m 18years old and I&apos;ve finished matriculation. I&apos;m available for freelance."
         },
         "techStack": {
             "title": "Tech Stack"
+        },
+        "experience": {
+            "title": "Experience"
         }
     },
     "projects": {
         "title": "projects",
         "subTitle": "My_Proud_Children"
+    },
+    "contact": {
+        "title": "Contact",
+        "descriptions": {
+            "description1": "Thank you for visiting my portfolio.",
+            "description2": "If you have any questions, comments, or inquiries, please don&apos;t hesitate to contact me.",
+            "description3": "You can reach me through the contact form on this page, or by email at <0>ngwesinsandar112@gmail.com</0>, or phone at <1>09757-978-569</1>.",
+            "description4": "I strive to respond to all messages as quickly as possible and look forward to hearing from you."
+        }
     }
 }

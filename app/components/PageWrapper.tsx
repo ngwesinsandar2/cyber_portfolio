@@ -1,5 +1,7 @@
-import Footer from "./Footer";
+"use client";
+
 import Navbar from "./Navbar/Navbar";
+import "../../libs/localization/i18n";
 
 const PageWrapper = ({
   children,
