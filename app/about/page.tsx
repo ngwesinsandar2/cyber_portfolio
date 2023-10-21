@@ -93,7 +93,7 @@ const About = () => {
 
         <section className="pb-6">
           <SubTitle subTitle={t("about.experience.title")} />
-          <TimeLine />
+          {/* <TimeLine /> */}
         </section>
       </main>
 
