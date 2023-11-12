@@ -4,8 +4,15 @@ import Footer from "../components/Footer";
 import projects from "../../data/projects.json";
 import Image from "next/image";
 import { OutlineButton, SolidButton } from "../components/Buttons";
+import { useRouter } from "next/navigation";
 
 const Projects = () => {
+  const router = useRouter();
+
+  const moreDetails = (id: number) => {
+    router.push(`/projects/${id}`)
+  }
+
   return (
     <>
       <main className="pt-16">
@@ -27,8 +34,9 @@ const Projects = () => {
                       <h3 className="text-2xl text-[var(--primary-color)]">{project.project_name}</h3>
                       <p>{project.project_des}</p>
                       <div className="flex gap-6">
-                        <OutlineButton content="Source Code" />
-                        <SolidButton content="See Demo" />
+                        {/* <OutlineButton content="Source Code" /> */}
+                        {/* <SolidButton content="See Demo" /> */}
+                        <SolidButton content="More Details" handleClick={() => moreDetails(project.id)} />
                       </div>
                     </div>
                   </li>

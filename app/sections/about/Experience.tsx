@@ -10,10 +10,12 @@ const Experience = () => {
         {experiences.map((experience) => {
           return (
             <div className="flex flex-col justify-center bg-[--primary-color] w-full h-[100px] px-4 subTitle">
-              <h3 className="text-xl font-bold mb-2">
-                {experience.company_name}&nbsp;({experience.start_year} -{" "}
-                {experience.end_year})
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="text-xl font-bold">
+                {experience.company_name}
               </h3>
+              <p>[{experience.start_year} -{" "}{experience.end_year}]</p>
+              </div>
               <p className="font-semibold">{experience.description}</p>
             </div>
           );
