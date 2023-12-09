@@ -9,7 +9,7 @@ const Experience = () => {
       <div className="grid grid-cols-3 gap-6 text-[--grey-color]">
         {experiences.map((experience) => {
           return (
-            <div className="flex flex-col justify-center bg-[--primary-color] w-full h-[100px] px-4 subTitle">
+            <div key={experience.id} className="flex flex-col justify-center bg-[--primary-color] w-full h-[100px] px-4 subTitle">
               <div className="flex items-center gap-2 mb-2">
                 <h3 className="text-xl font-bold">
                 {experience.company_name}

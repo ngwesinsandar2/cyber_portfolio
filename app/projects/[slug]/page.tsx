@@ -6,7 +6,9 @@ import { ProjectType } from "@/app/types/ProjectType";
 
 const ProjectDetails = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
-  const projectDetails: ProjectType = projects.find((project) => project.id === parseInt(slug))!;
+  const projectDetails: ProjectType = projects.find(
+    (project) => project.id === parseInt(slug)
+  )!;
 
   return (
     <>

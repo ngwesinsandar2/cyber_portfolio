@@ -9,6 +9,7 @@ import { RiArrowDownSFill } from "react-icons/ri";
 const Navbar = () => {
   const pathname = usePathname();
   const [showMenu, setShowMenu] = useState<Boolean>(false);
+  const [showLanguages, setShowLanguages] = useState<Boolean>(false);
 
   const links = [
     {
@@ -32,6 +33,10 @@ const Navbar = () => {
       link_url: "/contact",
     },
   ];
+
+  const handleLanguageClick = () => {
+    setShowLanguages(false);
+  }
 
   return (
     <>
@@ -89,12 +94,28 @@ const Navbar = () => {
                 );
               })}
             </ul>
-            <button className="flex items-center bg-[var(--primary-color)] text-[var(--grey-color)] px-2">
+            <button
+              onClick={() => setShowLanguages(!showLanguages)}
+              className="flex items-center bg-[var(--primary-color)] text-[var(--grey-color)] px-2"
+            >
               <p>EN</p>
               <RiArrowDownSFill />
             </button>
           </div>
         </nav>
+        {/* Languages Menu */}
+        {showLanguages && (
+          <div className="bg-black/20 backdrop-blur-lg rounded-sm w-[30%] float-right">
+            <div onClick={handleLanguageClick} className="flex items-center gap-2 p-2 cursor-pointer font-bold bg-[var(--primary-color)] text-[var(--grey-color)] hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]">
+              <p>-</p>
+              <p className="uppercase">english</p>
+            </div>
+            <div onClick={handleLanguageClick} className="flex items-center gap-2 p-2 cursor-pointer font-bold hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]">
+              <p>-</p>
+              <p className="uppercase">myanmar</p>
+            </div>
+          </div>
+        )}
 
         <MobileMenu links={links} showMenu={showMenu} />
       </header>

@@ -5,5 +5,5 @@ export type ProjectType = {
   img: string;
   details_link: string;
   demo_link: string;
-  source_code_link: string;
+  source_code_link?: string | undefined;
 };
