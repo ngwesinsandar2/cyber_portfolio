@@ -5,8 +5,8 @@
     "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
     "img": "/assets/images/projects/myMusicUI.png",
     "details_link": "",
-    "demo_link": "",
-    "source_code_link": ""
+    "demo_link": "https://musicui.leoleo26.repl.co/",
+    "source_code_link": "https://github.com/ngwesinsandar2/music-web"
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
     "img": "/assets/images/projects/digitalHunter.png",
     "details_link": "",
-    "demo_link": "",
-    "source_code_link": ""
+    "demo_link": "https://digitalhunter.leoleo26.repl.co/",
+    "source_code_link": "https://github.com/ngwesinsandar2/Digital-Hunter"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "img": "/assets/images/projects/portfolioLight.png",
     "details_link": "",
     "demo_link": "https://ngwesinsandar2.github.io/ngwe_sin_sandar/",
-    "source_code_link": ""
+    "source_code_link": "https://github.com/ngwesinsandar2/ngwe_sin_sandar"
   },
   {
     "id": 4,
@@ -32,16 +32,16 @@
     "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
     "img": "/assets/images/projects/cgLight.png",
     "details_link": "",
-    "demo_link": "",
-    "source_code_link": ""
+    "demo_link": "https://ngwesinsandar2.github.io/casey-gardner/",
+    "source_code_link": "https://github.com/ngwesinsandar2/favourite-simps"
   },
   {
     "id": 5,
     "project_name": "Favourite Simps",
     "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
     "img": "/assets/images/projects/favSimps.png",
-    "details_link": "",
-    "demo_link": ""
+    "details_link": "https://favourite-simps-2nd.vercel.app/home/1",
+    "demo_link": "https://github.com/ngwesinsandar2/casey-gardner"
   },
   {
     "id": 6,
@@ -49,7 +49,7 @@
     "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
     "img": "/assets/images/projects/kimDaMi.png",
     "details_link": "",
-    "demo_link": "",
-    "source_code_link": ""
+    "demo_link": "https://kim-da-mi.vercel.app/",
+    "source_code_link": "https://github.com/ngwesinsandar2/kim-da-mi"
   }
 ]

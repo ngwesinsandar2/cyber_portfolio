@@ -3,6 +3,7 @@
 import Footer from "@/app/components/Footer";
 import projects from "../../../data/projects.json";
 import { ProjectType } from "@/app/types/ProjectType";
+import { LinkOutlineButton, LinkSolidButton } from "@/app/components/Buttons";
 
 const ProjectDetails = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
@@ -19,7 +20,12 @@ const ProjectDetails = ({ params }: { params: { slug: string } }) => {
             [ My_Proud_Children ]
           </span> */}
         </h1>
-        <section className=" mb-10"></section>
+        <section className=" mb-10">
+          <div className="flex gap-4">
+          <LinkSolidButton content="See Demo" linkHref={projectDetails?.demo_link} />
+          <LinkOutlineButton content="Source Code" linkHref={projectDetails?.source_code_link} />
+          </div>
+        </section>
       </main>
 
       <Footer />
