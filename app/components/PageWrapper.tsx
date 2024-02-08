@@ -1,5 +1,3 @@
-"use client";
-
 import Navbar from "./Navbar/Navbar";
 import "../../libs/localization/i18n";
 

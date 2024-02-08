@@ -1,12 +1,14 @@
 import PageWrapper from "./components/PageWrapper";
 import "./globals.css";
+// import { appWithTranslation } from 'next-i18next';
+// import nextI18nextConfig from '../next-i18next.config';
 
 export const metadata = {
   title: "Ngwe Sin Sandar",
   description: "This is Cyber Portfolio with NextJs, TypeScript and Tailwind",
 };
 
-export default function RootLayout({
+function RootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -19,3 +21,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+// @ts-ignore
+export default RootLayout;

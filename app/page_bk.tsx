@@ -1,51 +1,48 @@
 "use client";
 
-import "./page.css";
-import CyberCircle from "./components/CyberCircle";
-import { OutlineButton, SolidButton } from "./components/Buttons";
-import Footer from "./components/Footer";
-import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
-
-// function setCookie(cname: string, cvalue: string, exdays: number) {
-//   const d = new Date();
-//   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-//   let expires = 'expires=' + d.toUTCString();
-//   document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
-// }
+import Image from 'next/image'
+import './page.css'
+import CyberCircle from './components/CyberCircle'
+import { OutlineButton, SolidButton } from './components/Buttons'
+import Footer from './components/Footer'
+import { useTranslation } from 'react-i18next'
+import { cookies } from 'next/headers';
+import { Locale, translations } from '@/libs/localization/i18n';
 
 export default function Home() {
-    const {t} = useTranslation();
-  // const { t, i18n } = useTranslation("translation", {
-  //   bindI18n: "languageChanged loaded",
-  // });
-  // useEffect(() => {
-  //   i18n.reloadResources(i18n.resolvedLanguage, "translation");
-  // }, [i18n]);
-
-  // const clientSideLanguageChange = (newLocale: string) => {
-  //   setCookie('TEST_LOCALE', newLocale, 1);
-  //   i18n.changeLanguage(newLocale);
-  // };
+  const {t} = useTranslation();
+  const cookieStore = cookies();
+  const locale = (cookieStore.get("locale")?.value || "en") as Locale;
 
   return (
     <>
-      <main className="">
+      <main className=''>
         <div className="marquee-container fixed hidden sm:block">
           <div className="relative flex justify-center items-center text-[--grey-color] bg-[--primary-color] transform -rotate-180 writing_mode_rl w-10 h-full text-center text-md font-bold uppercase">
-            <div className="flex gap-6 marquee"></div>
-            <div className="flex gap-6 marquee marquee2"></div>
+            <div className="flex gap-6 marquee">
+              
+              <p>{t("home.fullNameUnderscore")}</p>
+              <p>{t("home.fullNameUnderscore")}</p>
+              <p>{t("home.fullNameUnderscore")}</p>
+            </div>
+            <div className="flex gap-6 marquee marquee2">
+              <p>{t("home.fullNameUnderscore")}</p>
+              <p>{t("home.fullNameUnderscore")}</p>
+              <p>{t("home.fullNameUnderscore")}</p>
+            </div>
           </div>
         </div>
 
         <div className="min-h-[calc(94vh-5px)] grid grid-cols-1 lg:grid-cols-2 gap-10 justify-center items-center sm:pl-16 py-4">
           <div className="pt-4 lg:pt-0">
-            {/* <h1 className="text-5xl font-bold mb-6">
-              <span className="uppercase">{t("home.fullName")}</span>{" "}
-              <span className="text-2xl text-[--primary-color]">
-                [ {t("home.occupationUnderscore")} ]
-              </span>
-            </h1> */}
+            <h1 className="text-5xl font-bold mb-6"><span className="uppercase">{t("home.fullName")}</span> <span className="text-2xl text-[--primary-color]">[ {t("home.occupationUnderscore")} ]</span></h1>
+
+            <div className="text-lg mb-4">
+              <p>{t("home.whatsUp")}</p>
+              <p>{translations[locale].home.welcomeText}</p>
+              <p>{t("home.welcomeText")}</p>
+              <p>{t("home.thanksText")}</p>
+            </div>
 
             {/* <ul className='flex flex-col gap-2 mb-8'>
             <li className="relative">
@@ -67,9 +64,6 @@ export default function Home() {
           </ul> */}
 
             <div className="flex gap-6">
-              {/* <OutlineButton content="Myanmar" handleClick={() => clientSideLanguageChange('mm')} /> */}
-              {/* <OutlineButton content="English" handleClick={() => clientSideLanguageChange('en')} /> */}
-
               <OutlineButton content={t("common.buttons.contact")} />
               <SolidButton content={t("common.buttons.downloadCV")} />
             </div>
@@ -83,7 +77,7 @@ export default function Home() {
         </div>
       </main>
 
-      {/* <Footer footer_custom_classes="sm:ml-16" /> */}
+      <Footer footer_custom_classes="sm:ml-16" />
     </>
-  );
+  )
 }

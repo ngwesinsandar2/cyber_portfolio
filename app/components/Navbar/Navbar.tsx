@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full md:w-auto fixed top-[2%] sm:right-[10%] h-2">
+      <header className="w-full md:w-auto fixed top-[2%] sm:right-[10%] h-2 z-30">
         <button
           onClick={() => setShowMenu(!showMenu)}
           className="flex flex-col gap-[.3rem] float-right pr-8 pb-2 bg-black/20 backdrop-blur-lg md:hidden"
