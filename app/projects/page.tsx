@@ -16,6 +16,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import DemoandSourceButtons from "../components/DemoandSourceButtons";
 
 const Projects = () => {
   const router = useRouter();
@@ -49,30 +50,39 @@ const Projects = () => {
                     className="object-cover absolute right-10"
                   />
                   <div className="absolute left-10 bottom-10 z-10">
-                    <ul className="flex gap-6 mb-4">
-                      {project?.tech_stacks.map((tech_stack) => {
-                        return (
-                          <TooltipProvider delayDuration={200}>
-                            <Tooltip open>
-                              <TooltipTrigger asChild>
-                                <li>
-                                  <Image
-                                    src={tech_stack.tech_logo}
-                                    alt={tech_stack.tech_name}
-                                    width={30}
-                                    height={30}
-                                    className="object-cover"
-                                  />
-                                </li>
-                              </TooltipTrigger>
-                              <TooltipContent>
-                                <p>{tech_stack.tech_name}</p>
-                              </TooltipContent>
-                            </Tooltip>
-                          </TooltipProvider>
-                        );
-                      })}
-                    </ul>
+                    <div className="w-[70%] flex justify-between mb-4">
+                      <ul className="flex gap-6">
+                        {project?.tech_stacks.map((tech_stack) => {
+                          return (
+                            <TooltipProvider delayDuration={200}>
+                              <Tooltip open>
+                                <TooltipTrigger asChild>
+                                  <li>
+                                    <Image
+                                      src={tech_stack.tech_logo}
+                                      alt={tech_stack.tech_name}
+                                      width={30}
+                                      height={30}
+                                      className="object-cover"
+                                    />
+                                  </li>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                  <p>{tech_stack.tech_name}</p>
+                                </TooltipContent>
+                              </Tooltip>
+                            </TooltipProvider>
+                          );
+                        })}
+                      </ul>
+                      <DemoandSourceButtons
+                        projectDetails={project}
+                        bgColor="bg-[--primary-color]"
+                        textColor="text-black"
+                        beforeBgColor="before:bg-black"
+                        sourceBgColor="bg-[--primary-color]"
+                      />
+                    </div>
                     <div className="bg-[--primary-color] w-[70%] py-6 px-8 subTitle text-black">
                       <h3 className="text-3xl font-bold">
                         {project.project_name}
