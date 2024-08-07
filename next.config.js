@@ -4,10 +4,10 @@ const nextConfig = {
     appDir: true,
     serverActions: true,
   },
-  i18n: {
-    locales: ["en", "fr", "es"],
-    defaultLocale: "en",
-  },
+  // i18n: {
+  //   locales: ["en", "fr", "es"],
+  //   defaultLocale: "en",
+  // },
 };
 
 module.exports = nextConfig;
