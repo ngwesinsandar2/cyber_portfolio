@@ -1,13 +1,13 @@
 "use client";
 
+import {useTranslations} from 'next-intl';
 import Footer from "../components/Footer";
-import { useTranslation } from "react-i18next";
 import Myself from "../sections/about/Myself";
 import TechStacks from "../sections/about/TechStacks";
 import Experience from "../sections/about/Experience";
 
 const About = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <>

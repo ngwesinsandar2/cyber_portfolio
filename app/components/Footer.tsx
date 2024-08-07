@@ -1,8 +1,8 @@
 import Socials from "./Socials";
-import { useTranslation } from "react-i18next";
+import {useTranslations} from 'next-intl';
 
 const Footer = ({footer_custom_classes = ""}: {footer_custom_classes?: String}) => {
-  const {t} = useTranslation();
+  const t = useTranslations();
 
   return (
     <>

@@ -1,9 +1,9 @@
 "use client";
 
-import Footer from "../components/Footer";
-import projects from "../../data/projects.json";
+import Footer from "../../components/Footer";
+import projects from "../../../data/projects.json";
 import Image from "next/image";
-import { OutlineButton, SolidButton } from "../components/Buttons";
+import { OutlineButton, SolidButton } from "../../components/Buttons";
 import { useRouter } from "next/navigation";
 
 const ProjectsBK = () => {

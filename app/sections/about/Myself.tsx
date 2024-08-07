@@ -1,11 +1,11 @@
 "use client";
 
 import about_facts from "../../../data/about_facts.json";
-import { useTranslation } from "react-i18next";
+import {useTranslations} from 'next-intl';
 import SubTitle from "../../components/SubTitle";
 
 const Myself = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <section className="mb-20">

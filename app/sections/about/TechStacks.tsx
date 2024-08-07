@@ -2,11 +2,11 @@
 
 import tech_stacks from "../../../data/tech_stacks.json";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
 import SubTitle from "../../components/SubTitle";
+import {useTranslations} from 'next-intl';
 
 const TechStacks = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <section className="mb-20">

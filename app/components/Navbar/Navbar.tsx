@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import { RiArrowDownSFill } from "react-icons/ri";
+import { Link } from "@/navigation";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -34,9 +34,9 @@ const Navbar = () => {
     },
   ];
 
-  const handleLanguageClick = () => {
-    setShowLanguages(false);
-  }
+  // const handleLanguageClick = () => {
+  //   setShowLanguages(false);
+  // }
 
   return (
     <>
@@ -106,14 +106,14 @@ const Navbar = () => {
         {/* Languages Menu */}
         {showLanguages && (
           <div className="bg-black/20 backdrop-blur-lg rounded-sm w-[30%] float-right">
-            <div onClick={handleLanguageClick} className="flex items-center gap-2 p-2 cursor-pointer font-bold bg-[var(--primary-color)] text-[var(--grey-color)] hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]">
+            <Link href={"/"} locale="en" className="flex items-center gap-2 p-2 cursor-pointer font-bold bg-[var(--primary-color)] text-[var(--grey-color)] hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]">
               <p>-</p>
               <p className="uppercase">english</p>
-            </div>
-            <div onClick={handleLanguageClick} className="flex items-center gap-2 p-2 cursor-pointer font-bold hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]">
+            </Link>
+            <Link href={"/"} locale="mm" className="flex items-center gap-2 p-2 cursor-pointer font-bold hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]">
               <p>-</p>
               <p className="uppercase">myanmar</p>
-            </div>
+            </Link>
           </div>
         )}
 
