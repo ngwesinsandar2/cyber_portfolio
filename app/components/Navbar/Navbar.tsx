@@ -1,15 +1,22 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+import {useParams} from 'next/navigation';
+import { useState, useTransition } from "react";
 import MobileMenu from "./MobileMenu";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { Link } from "@/navigation";
+import {useRouter, usePathname} from '@/navigation';
 
 const Navbar = () => {
   const pathname = usePathname();
   const [showMenu, setShowMenu] = useState<Boolean>(false);
   const [showLanguages, setShowLanguages] = useState<Boolean>(false);
+  const router = useRouter();
+  const [isPending, startTransition] = useTransition();
+  const params = useParams();
+
+  console.log(params);
+  
 
   const links = [
     {
@@ -98,7 +105,7 @@ const Navbar = () => {
               onClick={() => setShowLanguages(!showLanguages)}
               className="flex items-center bg-[var(--primary-color)] text-[var(--grey-color)] px-2"
             >
-              <p>EN</p>
+              <p>Languages</p>
               <RiArrowDownSFill />
             </button>
           </div>
@@ -106,14 +113,34 @@ const Navbar = () => {
         {/* Languages Menu */}
         {showLanguages && (
           <div className="bg-black/20 backdrop-blur-lg rounded-sm w-[30%] float-right">
-            <Link href={"/"} locale="en" className="flex items-center gap-2 p-2 cursor-pointer font-bold bg-[var(--primary-color)] text-[var(--grey-color)] hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]">
+            <button onClick={() => {
+              startTransition(() => {
+                router.replace(
+                  // @ts-expect-error -- TypeScript will validate that only known `params`
+                  // are used in combination with a given `pathname`. Since the two will
+                  // always match for the current route, we can skip runtime checks.
+                  {pathname, params},
+                  {locale: 'en'}
+                );
+              });
+            }} className={`w-full flex items-center gap-2 p-2 cursor-pointer font-bold ${params?.locale === "en" ? 'bg-[var(--primary-color)] text-[var(--grey-color)]' : ''} hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]`}>
               <p>-</p>
               <p className="uppercase">english</p>
-            </Link>
-            <Link href={"/"} locale="mm" className="flex items-center gap-2 p-2 cursor-pointer font-bold hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]">
+            </button>
+            <button onClick={() => {
+              startTransition(() => {
+                router.replace(
+                  // @ts-expect-error -- TypeScript will validate that only known `params`
+                  // are used in combination with a given `pathname`. Since the two will
+                  // always match for the current route, we can skip runtime checks.
+                  {pathname, params},
+                  {locale: 'mm'}
+                );
+              });
+            }} className={`w-full flex items-center gap-2 p-2 cursor-pointer font-bold ${params?.locale === "mm" ? 'bg-[var(--primary-color)] text-[var(--grey-color)]' : ''} hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]`}>
               <p>-</p>
               <p className="uppercase">myanmar</p>
-            </Link>
+            </button>
           </div>
         )}
 

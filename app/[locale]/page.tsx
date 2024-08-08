@@ -6,7 +6,11 @@ import { OutlineButton, SolidButton } from '../components/Buttons'
 import Footer from '../components/Footer'
 import {useTranslations} from 'next-intl';
 
-export default function Home() {
+type Props = {
+  params: {locale: string};
+};
+
+export default function Home({params: {locale}}: Props) {
   const t = useTranslations();
 
   return (

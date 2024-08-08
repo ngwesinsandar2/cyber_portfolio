@@ -1,10 +1,10 @@
 "use client";
 
+import Footer from '@/app/components/Footer';
+import Experience from '@/app/sections/about/Experience';
+import Myself from '@/app/sections/about/Myself';
+import TechStacks from '@/app/sections/about/TechStacks';
 import {useTranslations} from 'next-intl';
-import Footer from "../components/Footer";
-import Myself from "../sections/about/Myself";
-import TechStacks from "../sections/about/TechStacks";
-import Experience from "../sections/about/Experience";
 
 const About = () => {
   const t = useTranslations();

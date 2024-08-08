@@ -14,7 +14,7 @@ const Experience = () => {
                 <h3 className="text-xl font-bold">
                 {experience.company_name}
               </h3>
-              <p>[{experience.start_year} -{" "}{experience.end_year}]</p>
+              <p className="font-semibold">[{experience.start_year} -{" "}{experience.end_year}]</p>
               </div>
               <p className="font-semibold">{experience.description}</p>
             </div>

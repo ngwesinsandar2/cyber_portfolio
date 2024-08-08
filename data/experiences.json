@@ -7,17 +7,17 @@
         "description": "I worked as a Frontend developer for one year."
     },
     {
+        "id": 3,
+        "start_year": "2023",
+        "end_year": "2023",
+        "company_name": "B Nex",
+        "description": "I'm currently working as a Frontend developer."
+    },
+    {
         "id": 2,
         "start_year": "2023",
         "end_year": "current",
         "company_name": "KBZLife",
-        "description": "I'm currently working as a Frontend developer."
-    },
-    {
-        "id": 3,
-        "start_year": "2023",
-        "end_year": "current",
-        "company_name": "B Nex",
         "description": "I'm currently working as a Frontend developer."
     }
 ]
