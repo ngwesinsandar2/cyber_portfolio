@@ -1,8 +1,10 @@
 import SubTitle from "@/app/components/SubTitle";
-import { t } from "i18next";
 import experiences from "../../../data/experiences.json";
+import { useTranslations } from "next-intl";
 
 const Experience = () => {
+  const t = useTranslations();
+
   return (
     <section className="pb-6">
       <SubTitle subTitle={t("about.experience.title")} />

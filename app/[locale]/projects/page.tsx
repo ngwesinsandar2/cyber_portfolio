@@ -1,26 +1,25 @@
-"use client";
+'use client';
 
-import Footer from "../components/Footer";
-import projects from "../../data/projects.json";
-import Image from "next/image";
-import { OutlineButton, SolidButton } from "../components/Buttons";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
-import { IoIosArrowForward } from "react-icons/io";
-import firstLineImg from "../../public/assets/images/projects/firstline.svg";
-import secondLineImg from "../../public/assets/images/projects/secondline.svg";
-import thirdLineImg from "../../public/assets/images/projects/thirdline.svg";
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+// import Link from 'next/link';
+import { Link } from '@/navigation';
+import { IoIosArrowForward } from 'react-icons/io';
+import firstLineImg from '@/public/assets/images/projects/firstline.svg';
+import secondLineImg from '@/public/assets/images/projects/secondline.svg';
+import thirdLineImg from '@/public/assets/images/projects/thirdline.svg';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import DemoandSourceButtons from "../components/DemoandSourceButtons";
+  TooltipTrigger
+} from '@/components/ui/tooltip';
+import projects from '@/data/projects.json';
+import DemoandSourceButtons from '@/app/components/DemoandSourceButtons';
+import Footer from '@/app/components/Footer';
 
 const Projects = () => {
-  const router = useRouter();
-
+  // const router = useRouter();
   // const moreDetails = (id: number) => {
   //   router.push(`/projects/${id}`);
   // };
@@ -29,7 +28,7 @@ const Projects = () => {
     <>
       <main className="pt-16">
         <h1 className="text-5xl font-bold mb-6">
-          <span className="uppercase">Projects</span>{" "}
+          <span className="uppercase">Projects</span>{' '}
           <span className="text-2xl text-[var(--primary-color)]">
             [ My_Proud_Children ]
           </span>
@@ -80,7 +79,7 @@ const Projects = () => {
                         bgColor="bg-[--primary-color]"
                         textColor="text-black"
                         beforeBgColor="before:bg-black"
-                        sourceBgColor="bg-[--primary-color]"
+                        // sourceBgColor="bg-[--primary-color]"
                       />
                     </div>
                     <div className="bg-[--primary-color] w-[70%] py-6 px-8 subTitle text-black">
@@ -101,7 +100,7 @@ const Projects = () => {
                     <div className="absolute left-20 -bottom-5 -z-[1]">
                       <Image
                         src={firstLineImg}
-                        alt={"First Line"}
+                        alt={'First Line'}
                         width={100}
                         height={100}
                         className=""
@@ -110,7 +109,7 @@ const Projects = () => {
                     <div className="absolute right-0 bottom-8 -z-[1]">
                       <Image
                         src={secondLineImg}
-                        alt={"Second Line"}
+                        alt={'Second Line'}
                         width={120}
                         height={120}
                         className=""
@@ -119,7 +118,7 @@ const Projects = () => {
                     <div className="absolute right-0 -bottom-5 -z-[1]">
                       <Image
                         src={thirdLineImg}
-                        alt={"Third Line"}
+                        alt={'Third Line'}
                         width={300}
                         height={300}
                         className=""

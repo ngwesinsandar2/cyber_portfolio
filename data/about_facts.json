@@ -2,26 +2,29 @@
   {
     "id": 1,
     "fact_name": "Name",
-    "fact_content": "Ngwe Sin Sandar"
-  },
-  {
-    "id": 2,
-    "fact_name": "Age",
-    "fact_content": "18 years old"
-  },
-  {
-    "id": 3,
-    "fact_name": "Email",
-    "fact_content2": "ngwesinsandandar112@gmail.com"
-  },
-  {
-    "id": 4,
-    "fact_name": "Name",
-    "fact_content3": "09757-978-569"
+    "fact_content": "Ngwe Sin Sandar",
+    "fact_value": null,
+    "fact_type": "text"
   },
   {
     "id": 5,
     "fact_name": "Position",
-    "fact_content": "Frontend developer"
+    "fact_content": "Frontend developer",
+    "fact_value": null,
+    "fact_type": "text"
+  },
+  {
+    "id": 3,
+    "fact_name": "Email",
+    "fact_content": "ngwesinsandandar112@gmail.com",
+    "fact_value": "ngwesinsandandar112@gmail.com",
+    "fact_type": "email"
+  },
+  {
+    "id": 4,
+    "fact_name": "Phone No",
+    "fact_content": "09757-978-569",
+    "fact_value": "09757978569",
+    "fact_type": "phno"
   }
 ]

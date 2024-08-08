@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import {useParams} from 'next/navigation';
-import { useState, useTransition } from "react";
-import MobileMenu from "./MobileMenu";
-import { RiArrowDownSFill } from "react-icons/ri";
-import { Link } from "@/navigation";
-import {useRouter, usePathname} from '@/navigation';
+import { useParams } from 'next/navigation';
+import { useState, useTransition } from 'react';
+import MobileMenu from './MobileMenu';
+import { RiArrowDownSFill } from 'react-icons/ri';
+import { Link } from '@/navigation';
+import { useRouter, usePathname } from '@/navigation';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -15,30 +15,27 @@ const Navbar = () => {
   const [isPending, startTransition] = useTransition();
   const params = useParams();
 
-  console.log(params);
-  
-
   const links = [
     {
       id: 1,
-      title: "home",
-      link_url: "/",
+      title: 'home',
+      link_url: '/'
     },
     {
       id: 2,
-      title: "about",
-      link_url: "/about",
+      title: 'about',
+      link_url: '/about'
     },
     {
       id: 3,
-      title: "projects",
-      link_url: "/projects",
+      title: 'projects',
+      link_url: '/projects'
     },
     {
       id: 4,
-      title: "contact",
-      link_url: "/contact",
-    },
+      title: 'contact',
+      link_url: '/contact'
+    }
   ];
 
   // const handleLanguageClick = () => {
@@ -55,22 +52,22 @@ const Navbar = () => {
           <div
             className={`${
               showMenu
-                ? "rotate-45 translate-y-[0.55rem] w-8"
-                : "rotate-0 translate-y-0 w-4"
+                ? 'rotate-45 translate-y-[0.55rem] w-8'
+                : 'rotate-0 translate-y-0 w-4'
             } h-1 bg-white rounded-lg transition-all duration-300`}
           ></div>
           <div
             className={`${
               showMenu
-                ? "translate-x-full opacity-0"
-                : "translate-x-0 opacity-1"
+                ? 'translate-x-full opacity-0'
+                : 'translate-x-0 opacity-1'
             } h-1 bg-white rounded-lg w-8 transition-all duration-300`}
           ></div>
           <div
             className={`${
               showMenu
-                ? "-rotate-45 -translate-y-[0.55rem] w-8"
-                : "rotate-0 translate-y-0 w-4"
+                ? '-rotate-45 -translate-y-[0.55rem] w-8'
+                : 'rotate-0 translate-y-0 w-4'
             }  h-1 bg-white rounded-lg self-end transition-all duration-300`}
           ></div>
         </button>
@@ -80,12 +77,15 @@ const Navbar = () => {
             <ul className="hidden md:flex flex-col sm:flex-row ps-4 gap-6">
               {links.map((link) => {
                 return (
-                  <li className="relative" key={link.id}>
+                  <li
+                    className="relative"
+                    key={link.id}
+                  >
                     <Link
                       href={link.link_url}
                       className={`${
                         link.link_url === pathname &&
-                        "text-[var(--primary-color)]"
+                        'text-[var(--primary-color)]'
                       } uppercase font-2xl before:z-[-1]`}
                     >
                       [ {link.title} ]
@@ -113,38 +113,55 @@ const Navbar = () => {
         {/* Languages Menu */}
         {showLanguages && (
           <div className="bg-black/20 backdrop-blur-lg rounded-sm w-[30%] float-right">
-            <button onClick={() => {
-              startTransition(() => {
-                router.replace(
-                  // @ts-expect-error -- TypeScript will validate that only known `params`
-                  // are used in combination with a given `pathname`. Since the two will
-                  // always match for the current route, we can skip runtime checks.
-                  {pathname, params},
-                  {locale: 'en'}
-                );
-              });
-            }} className={`w-full flex items-center gap-2 p-2 cursor-pointer font-bold ${params?.locale === "en" ? 'bg-[var(--primary-color)] text-[var(--grey-color)]' : ''} hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]`}>
+            <button
+              onClick={() => {
+                startTransition(() => {
+                  router.replace(
+                    // @ts-expect-error -- TypeScript will validate that only known `params`
+                    // are used in combination with a given `pathname`. Since the two will
+                    // always match for the current route, we can skip runtime checks.
+                    { pathname, params },
+                    { locale: 'en' }
+                  );
+                });
+              }}
+              className={`w-full flex items-center gap-2 p-2 cursor-pointer font-bold ${
+                params?.locale === 'en'
+                  ? 'bg-[var(--primary-color)] text-[var(--grey-color)]'
+                  : ''
+              } hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]`}
+            >
               <p>-</p>
               <p className="uppercase">english</p>
             </button>
-            <button onClick={() => {
-              startTransition(() => {
-                router.replace(
-                  // @ts-expect-error -- TypeScript will validate that only known `params`
-                  // are used in combination with a given `pathname`. Since the two will
-                  // always match for the current route, we can skip runtime checks.
-                  {pathname, params},
-                  {locale: 'mm'}
-                );
-              });
-            }} className={`w-full flex items-center gap-2 p-2 cursor-pointer font-bold ${params?.locale === "mm" ? 'bg-[var(--primary-color)] text-[var(--grey-color)]' : ''} hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]`}>
+            <button
+              onClick={() => {
+                startTransition(() => {
+                  router.replace(
+                    // @ts-expect-error -- TypeScript will validate that only known `params`
+                    // are used in combination with a given `pathname`. Since the two will
+                    // always match for the current route, we can skip runtime checks.
+                    { pathname, params },
+                    { locale: 'mm' }
+                  );
+                });
+              }}
+              className={`w-full flex items-center gap-2 p-2 cursor-pointer font-bold ${
+                params?.locale === 'mm'
+                  ? 'bg-[var(--primary-color)] text-[var(--grey-color)]'
+                  : ''
+              } hover:bg-[var(--primary-color)] hover:text-[var(--grey-color)]`}
+            >
               <p>-</p>
               <p className="uppercase">myanmar</p>
             </button>
           </div>
         )}
 
-        <MobileMenu links={links} showMenu={showMenu} />
+        <MobileMenu
+          links={links}
+          showMenu={showMenu}
+        />
       </header>
     </>
   );

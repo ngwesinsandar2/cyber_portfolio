@@ -19,8 +19,8 @@ const About = () => {
           </span>
         </h1>
         <Myself />
-        <TechStacks />
         <Experience />
+        {/* <TechStacks /> */}
       </main>
 
       <Footer />
