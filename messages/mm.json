@@ -13,19 +13,19 @@
             "seeDemo": "See demo"
         },
         "footer": {
-            "footerText": "All right serves - 2023 by Ngwe Sin Sandar"
+            "footerText": "All right serves - 2023 by ငွေစင်စန္ဒာ"
         }
     },
     "home": {
-        "fullNameUnderscore": "ngwe_sin_sandar",
-        "fullName": "Ngwe Sin",
+        "fullNameUnderscore": "ငွေ_စင်_စန္ဒာ",
+        "fullName": "ငွေစင်စန္ဒာ",
         "occupationUnderscore": "Frontend_dev",
         "whatsUp": "What's up everyone",
         "welcomeText": "cyberpunk theme portfolio မှ ကြိုဆိုပါတယ်!!",
-        "thanksText": "Thanks for visiting"
+        "thanksText": "လာရောက်လည်ပတ်ပေးတဲ့အတွက် ကျေးဇူးတင်ပါတယ်ရှင့်"
     },
     "about": {
-        "title": "about me",
+        "title": "ကျွန်ုပ်အကြောင်း",
         "subTitle": "Myself, Experience",
         "myself": {
             "title": "Myself",
@@ -45,8 +45,8 @@
     "contact": {
         "title": "Contact",
         "descriptions": {
-            "description1": "Thank you for visiting my portfolio.",
-            "description2": "If you have any questions, comments, or inquiries, please don&apos;t hesitate to contact me.",
+            "description1": "လာရောက်လည်ပတ်ပေးတဲ့အတွက် ကျေးဇူးတင်ပါတယ်ရှင့်",
+            "description2": "မေးခွန်းများ၊ မှတ်ချက်များ၊ သို့မဟုတ် မေးမြန်းချင်သော အကြောင်းအရာများရှိပါက ကျွန်ုပ်အား ဆက်သွယ်ပေးပါ",
             "description3": "You can reach me through the contact form on this page, or by email at <0>ngwesinsandar112@gmail.com</0>, or phone at <1>09757-978-569</1>.",
             "description4": "I strive to respond to all messages as quickly as possible and look forward to hearing from you."
         }

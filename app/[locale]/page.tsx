@@ -1,6 +1,6 @@
 "use client";
 
-import '../page.css'
+import './page.css'
 import CyberCircle from '../components/CyberCircle'
 import { OutlineButton, SolidButton } from '../components/Buttons'
 import Footer from '../components/Footer'

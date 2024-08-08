@@ -27,18 +27,18 @@ const Socials = () => {
       icon: BsFacebook,
       link_url: "https://www.facebook.com/profile.php?id=100052980773543",
     },
-    {
-      id: 5,
-      title: "Instagram",
-      icon: BsInstagram,
-      link_url: "/about",
-    },
-    {
-      id: 6,
-      title: "Telegram",
-      icon: FaTelegramPlane,
-      link_url: "/about",
-    },
+    // {
+    //   id: 5,
+    //   title: "Instagram",
+    //   icon: BsInstagram,
+    //   link_url: "/about",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Telegram",
+    //   icon: FaTelegramPlane,
+    //   link_url: "/about",
+    // },
   ]
 
   return (

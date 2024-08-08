@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 .marquee {
-  top: -100%;
+  top: -40%;
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
@@ -10,7 +10,7 @@
 }
 
 .marquee2 {
-  animation-delay: 15s;
+  animation-delay: 8s;
 }
 
 @keyframes marquee {
