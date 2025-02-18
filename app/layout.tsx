@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: 'Ngwe Sin Sandar',
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: Props) {
     <>
       {children}
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }
