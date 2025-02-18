@@ -13,7 +13,7 @@ export const metadata = {
     description: 'This is Cyber Portfolio with NextJs, TypeScript and Tailwind',
     images: [
       {
-        url: 'https://ngwesinsandar.com/og-image.png',
+        url: './opengraph-image.png',
         width: 1200,
         height: 630
       }

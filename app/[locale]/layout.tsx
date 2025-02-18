@@ -4,11 +4,8 @@ import {
   getMessages,
   unstable_setRequestLocale
 } from 'next-intl/server';
-import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
 import PageWrapper from '../components/PageWrapper';
-
-const inter = Inter({ subsets: ['latin'] });
 
 type Props = {
   children: ReactNode;
