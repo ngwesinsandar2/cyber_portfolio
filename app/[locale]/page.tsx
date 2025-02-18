@@ -16,7 +16,7 @@ export default function Home({ params: { locale } }: Props) {
   return (
     <>
       <main className="">
-        <div className="min-h-[calc(94vh-5px)] grid grid-cols-1 lg:grid-cols-2 gap-10 justify-center items-center py-4">
+        <div className="min-h-[calc(94vh-5px)] grid grid-cols-1 lg:grid-cols-2 gap-10 justify-center items-center pt-14 md:py-4">
           <div className="pt-4 lg:pt-0">
             <h1 className="text-5xl font-bold mb-6">
               <span className="uppercase">{t('home.fullName')}</span>{' '}

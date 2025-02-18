@@ -1,79 +1,49 @@
 'use client';
 
+import { Link, usePathname, useRouter } from '@/navigation';
 import { useParams } from 'next/navigation';
 import { useState, useTransition } from 'react';
-import MobileMenu from './MobileMenu';
 import { RiArrowDownSFill } from 'react-icons/ri';
-import { Link } from '@/navigation';
-import { useRouter, usePathname } from '@/navigation';
+import MobileNavbar from './MobileNavbar';
+import useDialog from '@/app/hooks/useDialog';
+import { FaHamburger } from 'react-icons/fa';
+
+const links = [
+  {
+    id: 1,
+    title: 'home',
+    link_url: '/'
+  },
+  {
+    id: 2,
+    title: 'about',
+    link_url: '/about'
+  },
+  {
+    id: 3,
+    title: 'projects',
+    link_url: '/projects'
+  },
+  {
+    id: 4,
+    title: 'contact',
+    link_url: '/contact'
+  }
+];
 
 const Navbar = () => {
+  const dialog = useDialog();
   const pathname = usePathname();
-  const [showMenu, setShowMenu] = useState<Boolean>(false);
   const [showLanguages, setShowLanguages] = useState<Boolean>(false);
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const params = useParams();
 
-  const links = [
-    {
-      id: 1,
-      title: 'home',
-      link_url: '/'
-    },
-    {
-      id: 2,
-      title: 'about',
-      link_url: '/about'
-    },
-    {
-      id: 3,
-      title: 'projects',
-      link_url: '/projects'
-    },
-    {
-      id: 4,
-      title: 'contact',
-      link_url: '/contact'
-    }
-  ];
-
-  // const handleLanguageClick = () => {
-  //   setShowLanguages(false);
-  // }
-
   return (
     <>
-      <header className="w-full md:w-auto fixed top-[2%] sm:right-[98px] h-2 z-30">
-        {/* <button
-          onClick={() => setShowMenu(!showMenu)}
-          className="flex flex-col gap-[.3rem] float-right pr-8 pb-2 bg-black/20 backdrop-blur-lg md:hidden"
-        >
-          <div
-            className={`${
-              showMenu
-                ? 'rotate-45 translate-y-[0.55rem] w-8'
-                : 'rotate-0 translate-y-0 w-4'
-            } h-1 bg-white rounded-lg transition-all duration-300`}
-          ></div>
-          <div
-            className={`${
-              showMenu
-                ? 'translate-x-full opacity-0'
-                : 'translate-x-0 opacity-1'
-            } h-1 bg-white rounded-lg w-8 transition-all duration-300`}
-          ></div>
-          <div
-            className={`${
-              showMenu
-                ? '-rotate-45 -translate-y-[0.55rem] w-8'
-                : 'rotate-0 translate-y-0 w-4'
-            }  h-1 bg-white rounded-lg self-end transition-all duration-300`}
-          ></div>
-        </button> */}
-
+      <header className="w-full md:w-auto fixed top-[2%] right-[10px] md:right-[98px] h-2 z-30 pl-[16px]">
         <nav className="bg-black/20 backdrop-blur-lg rounded-sm">
-          <div className="flex gap-4">
+          <div className="flex justify-between md:justify-start gap-4">
             <ul className="hidden md:flex flex-col sm:flex-row ps-4 gap-6">
               {links.map((link) => {
                 return (
@@ -101,6 +71,10 @@ const Navbar = () => {
                 );
               })}
             </ul>
+            <FaHamburger
+              className="text-white size-8 cursor-pointer block md:hidden"
+              onClick={dialog.openDialog}
+            />
             <button
               onClick={() => setShowLanguages(!showLanguages)}
               className="flex items-center bg-[var(--primary-color)] text-[var(--grey-color)] px-2"
@@ -157,12 +131,11 @@ const Navbar = () => {
             </button>
           </div>
         )}
-
-        {/* <MobileMenu
-          links={links}
-          showMenu={showMenu}
-        /> */}
       </header>
+      <MobileNavbar
+        links={links}
+        dialog={dialog}
+      />
     </>
   );
 };
