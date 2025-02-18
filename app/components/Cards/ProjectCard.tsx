@@ -1,15 +1,15 @@
 import { ProjectInterface } from "@/app/interfaces/ProjectInterface";
+import { Link } from "@/navigation";
 import Image from "next/image";
-import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 
 const ProjectCard = ({
-  projectDetails,
+  projectDetails
 }: {
   projectDetails: ProjectInterface;
 }) => {
   return (
-    <div className="">
+    <div className="block lg:hidden">
       <div className="flex justify-center pt-6 px-6 w-full bg-gradient-to-b from-[#292B38] to-[#0C0C12]">
         <Image
           src={projectDetails.img}

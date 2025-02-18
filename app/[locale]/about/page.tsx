@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <>
-      <main className="pt-16">
+      <main className="pt-20">
         <h1 className="text-5xl font-bold mb-6">
           <span className="uppercase">{t("about.title")}</span>{" "}
           <span className="text-2xl text-[--primary-color]">

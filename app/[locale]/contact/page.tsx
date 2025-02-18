@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <div className="flex flex-col justify-between h-svh">
-        <main className="pt-16">
+        <main className="pt-20">
           <h1 className="text-5xl font-bold mb-6">
             <span className="uppercase">{t('contact.title')}</span>{' '}
             <span className="text-2xl text-[var(--primary-color)]">

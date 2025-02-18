@@ -1,18 +1,17 @@
 'use client';
 
+import DemoandSourceButtons from '@/app/components/DemoandSourceButtons';
 import Footer from '@/app/components/Footer';
-import projects from '../../../../data/projects.json';
 import { ProjectInterface } from '@/app/interfaces/ProjectInterface';
+import bgLineImg from '@/public/assets/images/projects/bgLine.svg';
 import {
-  TooltipProvider,
   Tooltip,
-  TooltipTrigger,
-  TooltipContent
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger
 } from '@radix-ui/react-tooltip';
 import Image from 'next/image';
-import bgLineImg from '@/public/assets/images/projects/bgLine.svg';
-import myMusicUIImg from '@/public/assets/images/projects/myMusicUI.png';
-import DemoandSourceButtons from '@/app/components/DemoandSourceButtons';
+import projects from '../../../../data/projects.json';
 
 const ProjectDetails = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
@@ -21,10 +20,10 @@ const ProjectDetails = ({ params }: { params: { slug: string } }) => {
   )!;
 
   return (
-    <>
+    <div className="flex flex-col justify-between h-svh">
       <main className="py-16">
-        <section className="relative bg-[--primary-color] text-[--grey-color] px-16 pt-16">
-          <div className="grid grid-cols-2">
+        <section className="relative bg-[--primary-color] text-[--grey-color] px-6 md:px-16 pt-6 md:pt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0">
             <div>
               <h1 className="text-5xl font-bold mb-4 uppercase">
                 {projectDetails?.project_name}
@@ -106,8 +105,8 @@ const ProjectDetails = ({ params }: { params: { slug: string } }) => {
           </div>
         </section>
         <section>
-          <div className="px-16 pt-16">
-            <div className="grid grid-cols-3 gap-6">
+          <div className="px-6 md:px-16 pt-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <div className="col-span-2">
                 <div className="mb-6">
                   <h3 className="text-[--primary-color] text-2xl font-semibold mb-4">
@@ -148,7 +147,7 @@ const ProjectDetails = ({ params }: { params: { slug: string } }) => {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
