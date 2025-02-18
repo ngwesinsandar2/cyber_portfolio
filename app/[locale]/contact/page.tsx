@@ -1,24 +1,24 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import Footer from '../../components/Footer';
 
 const Contact = () => {
+  const t = useTranslations();
+
   return (
     <>
       <div className="flex flex-col justify-between h-svh">
         <main className="pt-16">
           <h1 className="text-5xl font-bold mb-6">
-            <span className="uppercase">Contact</span>{' '}
+            <span className="uppercase">{t('contact.title')}</span>{' '}
             <span className="text-2xl text-[var(--primary-color)]">
               [ Get_in_Touch ]
             </span>
           </h1>
           <section className="mb-10">
-            <p>Thank you for visiting my portfolio.</p>
-            <p>
-              If you have any questions, comments, or inquiries, please
-              don&apos;t hesitate to contact me.
-            </p>
+            <p>{t('contact.descriptions.description1')}</p>
+            <p>{t('contact.descriptions.description2')}</p>
             <p>
               You can reach me through the contact form on this page, or by
               email at{' '}
@@ -37,10 +37,7 @@ const Contact = () => {
               </a>
               .
             </p>
-            <p>
-              I strive to respond to all messages as quickly as possible and
-              look forward to hearing from you.
-            </p>
+            <p>{t('contact.descriptions.description4')}</p>
           </section>
         </main>
 

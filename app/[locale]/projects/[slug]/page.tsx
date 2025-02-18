@@ -1,20 +1,18 @@
-"use client";
+'use client';
 
-import Footer from "@/app/components/Footer";
-import projects from "../../../../data/projects.json";
-import { ProjectInterface } from "@/app/interfaces/ProjectInterface";
+import Footer from '@/app/components/Footer';
+import projects from '../../../../data/projects.json';
+import { ProjectInterface } from '@/app/interfaces/ProjectInterface';
 import {
   TooltipProvider,
   Tooltip,
   TooltipTrigger,
-  TooltipContent,
-} from "@radix-ui/react-tooltip";
-import Image from "next/image";
-import sourceCodeBorderImg from "@/public/assets/images/projects/sourceCodeBorder.svg";
-import bgLineImg from "@/public/assets/images/projects/bgLine.svg";
-import myMusicUIImg from "@/public/assets/images/projects/myMusicUI.png";
-import ProjectCard from "@/app/components/Cards/ProjectCard";
-import DemoandSourceButtons from "@/app/components/DemoandSourceButtons";
+  TooltipContent
+} from '@radix-ui/react-tooltip';
+import Image from 'next/image';
+import bgLineImg from '@/public/assets/images/projects/bgLine.svg';
+import myMusicUIImg from '@/public/assets/images/projects/myMusicUI.png';
+import DemoandSourceButtons from '@/app/components/DemoandSourceButtons';
 
 const ProjectDetails = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
@@ -34,7 +32,7 @@ const ProjectDetails = ({ params }: { params: { slug: string } }) => {
               <p className="font-semibold mb-10">
                 {projectDetails?.project_des}
               </p>
-              <ul className="flex gap-6 mb-10">
+              <ul className="flex gap-10 mb-10">
                 {projectDetails?.tech_stacks.map((tech_stack) => {
                   return (
                     <TooltipProvider delayDuration={200}>
@@ -100,7 +98,7 @@ const ProjectDetails = ({ params }: { params: { slug: string } }) => {
           <div className="absolute bottom-0 left-0">
             <Image
               src={bgLineImg}
-              alt={"Source Code Border"}
+              alt={'Source Code Border'}
               width={130}
               height={50}
               className="w-full h-full"
@@ -116,60 +114,26 @@ const ProjectDetails = ({ params }: { params: { slug: string } }) => {
                     Features
                   </h3>
                   <ul className="list-disc pl-6">
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    {Object.values(projectDetails.features).map((feature) => {
+                      return <li key={feature}>{feature}</li>;
+                    })}
                   </ul>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptas laborum illum ea, modi reprehenderit vel repellat
-                  beatae voluptatum? Mollitia sapiente reiciendis distinctio
-                  quae consectetur dolor sit fugiat ratione ducimus adipisci!
-                  <br />
-                  <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Itaque maxime eius dicta illum et eos adipisci quidem libero?
-                  Ut aspernatur autem illo dolorum modi rerum id facilis rem!
-                  Cupiditate, animi. Lorem ipsum dolor sit, amet consectetur
-                  adipisicing elit. Molestias sint laudantium officiis ullam
-                  illum alias quod quasi nemo at ad? Corrupti repellat,
-                  <br />
-                  <br />
-                  voluptate iste ea suscipit aperiam soluta aliquid nihil? Lorem
-                  ipsum dolor sit amet consectetur, adipisicing elit. Inventore,
-                  doloremque. Ea maxime itaque nobis, repellat officia magni
-                  enim iusto? Deserunt autem aliquid ab veritatis! Ut
-                  perspiciatis id unde praesentium! Nobis. Lorem, ipsum dolor
-                  sit amet consectetur adipisicing elit. Itaque aliquam suscipit
-                  et aspernatur. Enim magnam accusamus quasi delectus ipsa
-                  eveniet architecto totam libero non possimus, eos consequuntur
-                  modi hic quibusdam! Lorem ipsum dolor sit, amet consectetur
-                  adipisicing elit. Repudiandae fugiat, eaque veniam ipsum
-                  facilis vero culpa soluta, aliquam eius corporis debitis amet
-                  delectus dolorum doloribus blanditiis quod molestias veritatis
-                  error. Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit. Dolorum ratione numquam quia et animi vero, aliquid at
-                  molestias repudiandae ad rem culpa eos sint optio sapiente
-                  laborum harum sequi dignissimos?
-                </p>
+                <p>{projectDetails.long_des}</p>
               </div>
-              <div>
-                <h3></h3>
-                <div>
-                  <Image
-                    src={myMusicUIImg}
-                    alt={"Project Image"}
-                    width={2000}
-                    height={2000}
-                    className="w-full h-full"
-                  />
-                </div>
-              </div>
+              {/* <div>
+                <Image
+                  src={projectDetails.img}
+                  alt={'Project Image'}
+                  width={2000}
+                  height={2000}
+                  className="w-full h-full"
+                />
+              </div> */}
             </div>
           </div>
         </section>
-        <section>
+        {/* <section>
           <div className="px-16 pt-16">
             <h3 className="text-center text-[--primary-color] text-2xl font-semibold mb-4">
               Other Projects
@@ -180,7 +144,7 @@ const ProjectDetails = ({ params }: { params: { slug: string } }) => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <Footer />

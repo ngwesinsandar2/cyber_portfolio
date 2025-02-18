@@ -6,6 +6,21 @@ import SubTitle from '../../components/SubTitle';
 import { useMemo } from 'react';
 import { AboutFactInterface } from '@/app/interfaces/AboutInterface';
 
+// {
+//   "id": 3,
+//   "fact_name": "Email",
+//   "fact_content": "ngwesinsandandar112@gmail.com",
+//   "fact_value": "ngwesinsandandar112@gmail.com",
+//   "fact_type": "email"
+// },
+// {
+//   "id": 4,
+//   "fact_name": "Phone No",
+//   "fact_content": "09757-978-569",
+//   "fact_value": "09757978569",
+//   "fact_type": "phno"
+// }
+
 const FactItem = ({ af }: { af: AboutFactInterface }) => {
   const aboutfactcontent = useMemo(() => {
     switch (af.fact_type) {
@@ -53,7 +68,7 @@ const Myself = () => {
   const t = useTranslations();
 
   return (
-    <section className="mb-20">
+    <section className="mb-16">
       <SubTitle subTitle={t('about.myself.title')} />
 
       <div className="">
@@ -114,11 +129,3 @@ const Myself = () => {
 };
 
 export default Myself;
-
-// {
-//   "id": 2,
-//   "fact_name": "Age",
-//   "fact_content": "18 years old",
-//   "fact_value": null,
-//   "fact_type": "text"
-// },

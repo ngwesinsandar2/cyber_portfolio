@@ -1,23 +1,35 @@
 [
-    {
-        "id": 1,
-        "start_year": "2022",
-        "end_year": "2023",
-        "company_name": "OOAK Telecom",
-        "description": "I worked as a Frontend developer for one year."
-    },
-    {
-        "id": 3,
-        "start_year": "2023",
-        "end_year": "2023",
-        "company_name": "B Nex",
-        "description": "I worked as a Frontend developer."
-    },
-    {
-        "id": 2,
-        "start_year": "2023",
-        "end_year": "current",
-        "company_name": "KBZLife",
-        "description": "I'm currently working as a Frontend developer."
+  {
+    "id": 1,
+    "start_year": "2023",
+    "end_year": "current",
+    "company_name": "KBZLife",
+    "description_list": {
+      "list_1": "Developed core systems and self-service portals(responsive interfaces) using React.",
+      "list_2": "Collaborating with cross-functional teams to deliver scalable solutions.",
+      "list_3": "Involved in implementing reusable components and improving application performance."
     }
+  },
+  {
+    "id": 2,
+    "start_year": "2023",
+    "end_year": "2023",
+    "company_name": "B Nex",
+    "description_list": {
+      "list_1": "Built and designed the portfolio website for WTM(Women Transforming Myanmar) organization.",
+      "list_2": "Ensured cross-browser compatibility and responsiveness.",
+      "list_3": "Developed the site with Next, focusing on SEO."
+    }
+  },
+  {
+    "id": 3,
+    "start_year": "2022",
+    "end_year": "2023",
+    "company_name": "OOAK Telecom",
+    "description_list": {
+      "list_1": "Developed and maintained the frontend using Vue.",
+      "list_2": "Collaborated with the backend team to ensure seamless integration.",
+      "list_3": "Enhanced user experience through responsive design."
+    }
+  }
 ]

@@ -1,24 +1,22 @@
-import clsx from 'clsx';
-import {Inter} from 'next/font/google';
-import {NextIntlClientProvider} from 'next-intl';
+import { locales } from '@/config';
+import { NextIntlClientProvider } from 'next-intl';
 import {
   getMessages,
-  getTranslations,
   unstable_setRequestLocale
 } from 'next-intl/server';
-import {ReactNode} from 'react';
-import {locales} from '@/config';
+import { Inter } from 'next/font/google';
+import { ReactNode } from 'react';
 import PageWrapper from '../components/PageWrapper';
 
-const inter = Inter({subsets: ['latin']});
+const inter = Inter({ subsets: ['latin'] });
 
 type Props = {
   children: ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 };
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
+  return locales.map((locale) => ({ locale }));
 }
 
 // export async function generateMetadata({
@@ -33,7 +31,7 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params: { locale }
 }: Props) {
   // Enable static rendering
   unstable_setRequestLocale(locale);
@@ -45,8 +43,8 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-      <NextIntlClientProvider messages={messages}>
-        <PageWrapper>{children}</PageWrapper>
+        <NextIntlClientProvider messages={messages}>
+          <PageWrapper>{children}</PageWrapper>
         </NextIntlClientProvider>
       </body>
     </html>

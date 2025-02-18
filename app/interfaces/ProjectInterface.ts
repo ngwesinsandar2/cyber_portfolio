@@ -2,6 +2,10 @@ export interface ProjectInterface {
   id: number;
   project_name: string;
   project_des: string;
+  long_des: string;
+  features: {
+    [key: string]: string | undefined;
+  }
   img: string;
   details_link: string;
   demo_link: string;

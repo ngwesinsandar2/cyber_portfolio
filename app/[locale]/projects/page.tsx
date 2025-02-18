@@ -17,8 +17,10 @@ import {
 import projects from '@/data/projects.json';
 import DemoandSourceButtons from '@/app/components/DemoandSourceButtons';
 import Footer from '@/app/components/Footer';
+import { useTranslations } from 'next-intl';
 
 const Projects = () => {
+  const t = useTranslations();
   // const router = useRouter();
   // const moreDetails = (id: number) => {
   //   router.push(`/projects/${id}`);
@@ -27,12 +29,16 @@ const Projects = () => {
   return (
     <>
       <main className="pt-16">
-        <h1 className="text-5xl font-bold mb-6">
-          <span className="uppercase">Projects</span>{' '}
+        <h1 className="text-5xl font-bold">
+          <span className="uppercase">{t("projects.title")}</span>{' '}
           <span className="text-2xl text-[var(--primary-color)]">
             [ My_Proud_Children ]
           </span>
         </h1>
+        <h6 className='text-lg text-[--primary-color] font-semibold mb-6'>
+          Big thanks to my friend Htoo Aung Shine for these project pages
+          designs.
+        </h6>
         <section className=" mb-10">
           <ul className="flex flex-col gap-10">
             {projects.map((project) => {
@@ -48,8 +54,8 @@ const Projects = () => {
                     height={400}
                     className="object-cover absolute right-10"
                   />
-                  <div className="absolute left-10 bottom-10 z-10">
-                    <div className="w-[70%] flex justify-between mb-4">
+                  <div className="absolute left-10 bottom-10 z-10 w-[95%]">
+                    <div className="w-[63%] flex justify-between mb-4">
                       <ul className="flex gap-6">
                         {project?.tech_stacks.map((tech_stack) => {
                           return (

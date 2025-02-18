@@ -44,8 +44,8 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full md:w-auto fixed top-[2%] sm:right-[10%] h-2 z-30">
-        <button
+      <header className="w-full md:w-auto fixed top-[2%] sm:right-[98px] h-2 z-30">
+        {/* <button
           onClick={() => setShowMenu(!showMenu)}
           className="flex flex-col gap-[.3rem] float-right pr-8 pb-2 bg-black/20 backdrop-blur-lg md:hidden"
         >
@@ -70,7 +70,7 @@ const Navbar = () => {
                 : 'rotate-0 translate-y-0 w-4'
             }  h-1 bg-white rounded-lg self-end transition-all duration-300`}
           ></div>
-        </button>
+        </button> */}
 
         <nav className="bg-black/20 backdrop-blur-lg rounded-sm">
           <div className="flex gap-4">
@@ -158,10 +158,10 @@ const Navbar = () => {
           </div>
         )}
 
-        <MobileMenu
+        {/* <MobileMenu
           links={links}
           showMenu={showMenu}
-        />
+        /> */}
       </header>
     </>
   );

@@ -12,19 +12,5 @@
     "fact_content": "Frontend developer",
     "fact_value": null,
     "fact_type": "text"
-  },
-  {
-    "id": 3,
-    "fact_name": "Email",
-    "fact_content": "ngwesinsandandar112@gmail.com",
-    "fact_value": "ngwesinsandandar112@gmail.com",
-    "fact_type": "email"
-  },
-  {
-    "id": 4,
-    "fact_name": "Phone No",
-    "fact_content": "09757-978-569",
-    "fact_value": "09757978569",
-    "fact_type": "phno"
   }
 ]
