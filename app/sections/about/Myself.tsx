@@ -82,14 +82,14 @@ const Myself = () => {
 
         <div className="flex flex-col gap-2">
           <p>
-            My name is Ngwe Sin Sandar, and I am a passionate and dedicated
-            programmer. My journey in programming began 2 years ago.
+            Passionate and dedicated programmer with 3 years of experience in
+            frontend development.
           </p>
           <p>
-            I have experience in both frontend and backend development, allowing
-            me to create comprehensive and seamless applications. My expertise
-            includes working with languages such as PHP and JavaScript, as well
-            as frameworks like React, Vue and Laraval.
+            I have experience in frontend development and did some experiments
+            in backend development, allowing me to create comprehensive and
+            seamless applications. My expertise includes working with
+            JavaScript, as well as frameworks like React and Vue.
           </p>
           <p>
             One of the aspects I enjoy most about programming is
@@ -121,7 +121,9 @@ const Myself = () => {
             innovation. I am excited about the future of programming and look
             forward to contributing to the ever-evolving tech landscape.
           </p>
-          <p className='text-[var(--primary-color)]'>*I'm very flexsible with tech stacks.</p>
+          <p className="text-[var(--primary-color)]">
+            *I'm very flexsible with tech stacks.
+          </p>
         </div>
       </div>
     </section>

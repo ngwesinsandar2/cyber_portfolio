@@ -59,7 +59,7 @@
   {
     "id": 3,
     "project_name": "Favourite Simps",
-    "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
+    "project_des": "A lighthearted fan page celebrating favorite characters, built with a creative and fun approach.",
     "img": "/assets/images/projects/favSimps.png",
     "details_link": "",
     "demo_link": "https://favourite-simps-2nd.vercel.app",
@@ -76,16 +76,18 @@
         "tech_logo": "/assets/images/tech_stacks/materialui.svg"
       }
     ],
-    "long_des": "This music web app was inspired by a tutorial from MSquare's YouTube channel on building a music project.",
+    "long_des": "This project reflects passion and creativity through a fan page dedicated to favorite characters. Featuring interactive elements and a playful design, the website creates an enjoyable browsing experience while showcasing web development skills.",
     "features": {
-      "feature_1": "Has English, Japan, Korea and Myanmar songs."
+      "feature_1": "Character profiles with descriptions.",
+      "feature_2": "Engaging and colorful UI.",
+      "feature_3": "Responsive design for all devices."
     }
   },
   {
     "id": 4,
     "project_name": "Kim Da Mi",
-    "project_des": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vitae expedita iure, ipsa praesentium odio. Suscipit repellendus amet eius vitae!",
-    "img": "/assets/images/projects/kimdami.png",
+    "project_des": "A visually engaging fan site dedicated to the actress Kim Da-mi, showcasing her filmography and biography.",
+    "img": "/assets/images/projects/kimDaMi.png",
     "details_link": "",
     "demo_link": "https://kim-da-mi.vercel.app/",
     "source_code_link": "https://github.com/ngwesinsandar2/kim-da-mi",
@@ -101,9 +103,10 @@
         "tech_logo": "/assets/images/tech_stacks/tailwindcss.svg"
       }
     ],
-    "long_des": "This music web app was inspired by a tutorial from MSquare's YouTube channel on building a music project.",
+    "long_des": "I just want to test page transition with framer motion.",
     "features": {
-      "feature_1": "Has English, Japan, Korea and Myanmar songs."
+      "feature_1": "Biography",
+      "feature_2": "Filmography"
     }
   },
   {

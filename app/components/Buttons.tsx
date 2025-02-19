@@ -5,6 +5,7 @@ interface ButtonInterface {
 
 interface LinkButtonInterface extends ButtonInterface {
   linkHref?: string;
+  download?: boolean;
 }
 
 export const OutlineButton = ({ content, handleClick }: ButtonInterface) => {
@@ -41,7 +42,7 @@ export const LinkOutlineButton = ({
   return (
     <>
       <a
-      href={linkHref}
+        href={linkHref}
         onClick={handleClick}
         className="font-bold px-6 py-2 border-2 border-[--primary-color] rounded-sm"
       >
@@ -51,13 +52,17 @@ export const LinkOutlineButton = ({
   );
 };
 
-export const LinkSolidButton = ({ content, handleClick, linkHref }: LinkButtonInterface) => {
+export const LinkSolidButton = ({
+  content,
+  linkHref,
+  ...props
+}: LinkButtonInterface) => {
   return (
     <>
       <a
-      href={linkHref}
-        onClick={handleClick}
+        href={linkHref}
         className="font-bold px-6 py-2 border-2 border-[--primary-color] rounded-sm bg-[--primary-color] text-[--grey-color]"
+        {...props}
       >
         {content}
       </a>

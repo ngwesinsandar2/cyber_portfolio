@@ -5,7 +5,7 @@
     "end_year": "current",
     "company_name": "KBZLife",
     "description_list": {
-      "list_1": "Developed core systems and self-service portals(responsive interfaces) using React.",
+      "list_1": "Contributed to the development and maintenance of Myanmar’s pioneering online self-service insurance portal and Core System using React, enabling customers to manage policies and payments digitally.",
       "list_2": "Collaborating with cross-functional teams to deliver scalable solutions.",
       "list_3": "Involved in implementing reusable components and improving application performance."
     }
@@ -27,9 +27,10 @@
     "end_year": "2023",
     "company_name": "OOAK Telecom",
     "description_list": {
-      "list_1": "Developed and maintained the frontend using Vue.",
+      "list_1": "Developed and maintained the frontend using Vue, an e-commerce platform offering affordable SIM cards and pocket WiFi services tailored for foreigners in Japan.",
       "list_2": "Collaborated with the backend team to ensure seamless integration.",
-      "list_3": "Enhanced user experience through responsive design."
+      "list_3": "Enhanced user experience through responsive design.",
+      "list_4": "Multilingual support to cater to a diverse user base."
     }
   }
 ]

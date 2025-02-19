@@ -2,7 +2,7 @@
 
 import './page.css';
 import CyberCircle from '../components/CyberCircle';
-import { OutlineButton, SolidButton } from '../components/Buttons';
+import { LinkOutlineButton, LinkSolidButton } from '../components/Buttons';
 import Footer from '../components/Footer';
 import { useTranslations } from 'next-intl';
 
@@ -26,14 +26,21 @@ export default function Home({ params: { locale } }: Props) {
             </h1>
 
             <div className="text-lg mb-4">
-              {/* <p>{t('home.whatsUp')}</p> */}
+              <p>{t('home.greeting')}</p>
               <p>{t('home.welcomeText')}</p>
               <p>{t('home.thanksText')}</p>
             </div>
 
             <div className="flex gap-6">
-              <OutlineButton content={t('common.buttons.contact')} />
-              <SolidButton content={t('common.buttons.downloadCV')} />
+              <LinkOutlineButton
+                content={t('common.buttons.contact')}
+                linkHref="/contact"
+              />
+              <LinkSolidButton
+                content={t('common.buttons.downloadCV')}
+                linkHref={'/ngwe-sin-sandar-cv.pdf'}
+                download
+              />
             </div>
           </div>
 

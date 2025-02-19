@@ -21,7 +21,8 @@
         "fullName": "Ngwe Sin Sandar",
         "occupationUnderscore": "Frontend_dev",
         "whatsUp": "What's up everyone",
-        "welcomeText": "Welcome from my cyber theme portfolio!!",
+        "greeting": "Hello!!",
+        "welcomeText": "Welcome from my cyber theme portfolio",
         "thanksText": "Thanks for visiting"
     },
     "about": {

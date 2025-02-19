@@ -1,13 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 // import Link from 'next/link';
-import { Link } from '@/navigation';
-import { IoIosArrowForward } from 'react-icons/io';
-import firstLineImg from '@/public/assets/images/projects/firstline.svg';
-import secondLineImg from '@/public/assets/images/projects/secondline.svg';
-import thirdLineImg from '@/public/assets/images/projects/thirdline.svg';
+import ProjectCard from '@/app/components/Cards/ProjectCard';
+import DemoandSourceButtons from '@/app/components/DemoandSourceButtons';
+import Footer from '@/app/components/Footer';
 import {
   Tooltip,
   TooltipContent,
@@ -15,10 +12,12 @@ import {
   TooltipTrigger
 } from '@/components/ui/tooltip';
 import projects from '@/data/projects.json';
-import DemoandSourceButtons from '@/app/components/DemoandSourceButtons';
-import Footer from '@/app/components/Footer';
+import { Link } from '@/navigation';
+import firstLineImg from '@/public/assets/images/projects/firstline.svg';
+import secondLineImg from '@/public/assets/images/projects/secondline.svg';
+import thirdLineImg from '@/public/assets/images/projects/thirdline.svg';
 import { useTranslations } from 'next-intl';
-import ProjectCard from '@/app/components/Cards/ProjectCard';
+import { IoIosArrowForward } from 'react-icons/io';
 
 const Projects = () => {
   const t = useTranslations();
@@ -37,7 +36,7 @@ const Projects = () => {
           </span>
         </h1>
         <h6 className="text-lg text-[--primary-color] font-semibold mb-6">
-          Big thanks to my friend Htoo Aung Shine for these project pages
+          Big thanks to my UX/UI designer friend Htoo Aung Shine for these project pages
           designs.
         </h6>
         <section className="mb-10">

@@ -21,7 +21,8 @@
         "fullName": "ငွေစင်စန္ဒာ",
         "occupationUnderscore": "Frontend_dev",
         "whatsUp": "What's up everyone",
-        "welcomeText": "cyberpunk theme portfolio မှ ကြိုဆိုပါတယ်!!",
+        "greeting": "မင်္ဂလာပါ!!",
+        "welcomeText": "cyberpunk theme portfolio မှ ကြိုဆိုပါတယ်",
         "thanksText": "လာရောက်လည်ပတ်တဲ့အတွက် ကျေးဇူးတင်ပါတယ်"
     },
     "about": {
