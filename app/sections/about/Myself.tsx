@@ -89,7 +89,7 @@ const Myself = () => {
             I have experience in frontend development and did some experiments
             in backend development, allowing me to create comprehensive and
             seamless applications. My expertise includes working with
-            JavaScript, as well as frameworks like React and Vue.
+            JavaScript, TypeScript, as well as frameworks like React and Vue.
           </p>
           <p>
             One of the aspects I enjoy most about programming is

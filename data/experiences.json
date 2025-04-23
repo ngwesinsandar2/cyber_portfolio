@@ -5,32 +5,34 @@
     "end_year": "current",
     "company_name": "KBZLife",
     "description_list": {
-      "list_1": "Contributed to the development and maintenance of Myanmar’s pioneering online self-service insurance portal and Core System using React, enabling customers to manage policies and payments digitally.",
-      "list_2": "Collaborating with cross-functional teams to deliver scalable solutions.",
-      "list_3": "Involved in implementing reusable components and improving application performance."
+      "list_1": "Take part in the development of Myanmar’s pioneering online self-service insurance portal, only in a short period of timeline.",
+      "list_2": "Contributed in developing the Core Insurance System, with complex business and technical requirements.",
+      "list_3": "Played a key role in developing the frontend using React and other useful libraries allowing quick development timeline.",
+      "list_4": "Collaborated with backend team to integrate RESTful APIs while resolving code and business issues encountered during development.",
+      "list_5": "Agile environment with cross-functional teams using task management tools, daily stand-ups and bi-weekly sprints."
     }
   },
   {
     "id": 2,
-    "start_year": "2023",
-    "end_year": "2023",
-    "company_name": "B Nex",
-    "description_list": {
-      "list_1": "Built and designed the portfolio website for WTM(Women Transforming Myanmar) organization.",
-      "list_2": "Ensured cross-browser compatibility and responsiveness.",
-      "list_3": "Developed the site with Next, focusing on SEO."
-    }
-  },
-  {
-    "id": 3,
     "start_year": "2022",
     "end_year": "2023",
     "company_name": "OOAK Telecom",
     "description_list": {
-      "list_1": "Developed and maintained the frontend using Vue, an e-commerce platform offering affordable SIM cards and pocket WiFi services tailored for foreigners in Japan.",
-      "list_2": "Collaborated with the backend team to ensure seamless integration.",
-      "list_3": "Enhanced user experience through responsive design.",
-      "list_4": "Multilingual support to cater to a diverse user base."
+      "list_1": "Developed and maintained an e-commerce platform offering affordable SIM cards and pocket WiFi services tailored for foreigners in Japan.",
+      "list_2": "Added essential features, such as multilingual support , authentication, buying packages and balance inquiry.",
+      "list_3": "Collaborated closely with the backend team to ensure seamless integration for user experience and security.",
+      "list_4": "Enhanced user experience and device reach through responsive design.",
+      "list_5": "Achieved completion of deadlines while working remotely under minimal supervision."
+    }
+  },
+  {
+    "id": 3,
+    "start_year": "",
+    "end_year": "",
+    "company_name": "Women Transforming Myanmar (Freelance)",
+    "description_list": {
+      "list_1": "Developed the organizational profile website.",
+      "list_2": "Primarily focused on SEO with NEXT and replicated the UI as exactly as provided design with responsiveness."
     }
   }
 ]

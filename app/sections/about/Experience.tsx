@@ -20,14 +20,25 @@ const Experience = () => {
                   <h3 className="text-xl font-bold inline-block">
                     {experience.company_name}
                   </h3>
-                  <p className="font-semibold inline-block">
-                    [{experience.start_year} - {experience.end_year}]
-                  </p>
+                  {experience.start_year && experience.end_year ? (
+                    <p className="font-semibold inline-block">
+                      [{experience.start_year} - {experience.end_year}]
+                    </p>
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </div>
-              <ul className='list-disc pl-5'>
+              <ul className="list-disc pl-5">
                 {Object.values(experience.description_list).map((val) => {
-                  return <li key={val} className='text-white font-semibold'>{val}</li>;
+                  return (
+                    <li
+                      key={val}
+                      className="text-white font-semibold"
+                    >
+                      {val}
+                    </li>
+                  );
                 })}
               </ul>
             </div>
